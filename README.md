@@ -61,11 +61,11 @@ Ver `.env.example` para lista completa. Variables clave para Payments App:
 - `SERVICE_TOKEN_SECRET` — Token para autenticación inter-app
 - `MP_ACCESS_TOKEN` — Token de MercadoPago (si usas integración real)
 
-## Payments App (Rocco Paoloni) 🔥
+## Payments App (Rocco Paoloni) 
 
 Este repositorio incluye un **scaffold COMPLETO** para la "Payments App" que maneja todo el flujo de pagos.
 
-### ✅ Características
+### Características
 
 - **Modelos Prisma**: Payment, Settlement, Payout, Refund, MpWebhookEvent, OutboundCallLog
 - **API REST versionada** (`/api/v1/payments/*`) con validación de seguridad
@@ -76,7 +76,7 @@ Este repositorio incluye un **scaffold COMPLETO** para la "Payments App" que man
 - **Tests de humo**: `npm run smoke`
 - **Tipos TypeScript**: `src/types/payments.ts`
 
-### 📚 Documentación (12 archivos MD)
+### Documentación (12 archivos MD)
 
 **[Empieza aquí → `/referencias/README.md`](referencias/README.md)**
 

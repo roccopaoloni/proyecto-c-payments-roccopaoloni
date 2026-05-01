@@ -7,6 +7,7 @@
     "smoke": "node tests/smoke/run.js",
     "build": "next build",
     "start": "next start",
+    "postinstall": "prisma generate",
     "lint": "eslint"
   },
   "dependencies": {
