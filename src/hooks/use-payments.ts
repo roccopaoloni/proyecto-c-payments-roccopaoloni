@@ -1,5 +1,5 @@
 import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query'
-import axios from '@/lib/axios'
+import axios from 'axios'
 
 export function usePayments(opts?: any) {
   return useQuery(['payments', opts], async () => {
