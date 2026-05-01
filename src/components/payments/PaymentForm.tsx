@@ -15,12 +15,11 @@ export default function PaymentForm() {
     }
 
     try {
-      const res = await create.mutateAsync({ order_id: `ord_${Date.now()}`, amount_cents: amount })
+      const res = await create.mutateAsync({ order_id: `ord_${Date.now()}`, amount_cents: amount, buyer_profile_id: 'buyer_123' })
       toast.success('Payment created')
       // If checkout_url returned, show it
-      if (res?.data?.checkout_url || res?.checkout_url) {
-        const url = res?.data?.checkout_url || res?.checkout_url
-        toast('Open checkout', { description: url })
+      if (res?.data?.checkout_url) {
+        toast('Open checkout', { description: res.data.checkout_url })
       }
     } catch (err) {
       console.error(err)

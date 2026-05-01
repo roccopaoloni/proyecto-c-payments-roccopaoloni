@@ -1,4 +1,4 @@
-import axios from '@/lib/axios'
+import axios from 'axios'
 
 export async function notifyBuyerPaymentStatus(buyerBaseUrl: string, orderId: string, status: string) {
   // Example: PATCH buyer service /api/v1/orders/{orderId}/payment-status

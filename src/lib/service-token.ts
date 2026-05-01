@@ -1,6 +1,6 @@
 import crypto from 'crypto'
 
-export function validateServiceToken(token?: string) {
+export function validateServiceToken(token?: string) { // Placeholder validation logic
   // Skeleton: accept when token equals SERVICE_TOKEN_SECRET env var
   const secret = process.env.SERVICE_TOKEN_SECRET
   if (!secret) return false
