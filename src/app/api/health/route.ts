@@ -7,6 +7,6 @@ export async function GET() {
     return NextResponse.json({ status: "ok", db: "connected", timestamp: new Date().toISOString() });
   } catch (error) {
     console.log("Error occurred:", error);
-    return NextResponse.json({ status: "error", db: "disconnected", timestamp: new Date().toISOString() }, { status: 500 });
+    return NextResponse.json({ error: JSON.stringify(error), status: "error", db: "disconnected", timestamp: new Date().toISOString() }, { status: 500 });
   }
 }
