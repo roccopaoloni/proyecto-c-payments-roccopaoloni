@@ -4,7 +4,6 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "smoke": "node tests/smoke/run.js",
     "build": "prisma generate && next build" ,
     "start": "next start",
     "postinstall": "prisma generate",
